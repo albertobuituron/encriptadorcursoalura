@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="./imagenes/alura.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="https://www.aluracursos.com" target="_blank">
+            <img src="./imagenes/alura.png" alt="Logo" class="logo">
+        </a>
+        <h1>Encriptador de Texto</h1>
+        <button id="modoClaroOscuro" class="icon-button">🌞</button>
+    </header>
+
+    <main>
+        <section>
+            <textarea id="entradaTexto" placeholder="Escribe el texto aquí, en minúsculas y sin acentos..."></textarea>
+            <textarea id="resultadoTexto" placeholder="Resultado..." readonly></textarea>
+            <div class="botones">
+                <button id="encriptarBtn">Encriptar</button>
+                <button id="desencriptarBtn">Desencriptar</button>
+                <button id="copiarBtn">Copiar</button>
+                <button id="borrarBtn">Borrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Alberto Buituron</p>
+        <a href="https://www.linkedin.com/in/alberto-buituron/" target="_blank">
+            <img src="./imagenes/linkedin.png" alt="LinkedIn de Alberto Buituron" class="social-icon">
+        </a>
+        <a href="https://github.com/albertobuituron/" target="_blank">
+            <img src="./imagenes/github.png" alt="GitHub de Alberto Buituron" class="social-icon">
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

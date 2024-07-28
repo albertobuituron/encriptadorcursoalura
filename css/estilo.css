@@ -1,0 +1,187 @@
+/* Estilos para modo claro y oscuro */
+:root {
+    --fondo-claro: #ffffff;
+    --fondo-oscuro: #2e2e2e;
+    --texto-claro: #000000;
+    --texto-oscuro: #ffffff;
+    --color-boton-claro: #007bff;
+    --color-boton-oscuro: #0056b3;
+    --borde-claro: #ccc;
+    --borde-oscuro: #444;
+    --fondo-footer-claro: #f1f1f1;
+    --fondo-footer-oscuro: #1a1a1a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagenes/fondo3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--texto-claro);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.modo-oscuro {
+    background-color: var(--fondo-oscuro);
+    color: var(--texto-oscuro);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--fondo-claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+header.modo-oscuro {
+    background-color: var(--fondo-oscuro);
+}
+
+header .logo {
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-button:hover {
+    transform: scale(1.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid var(--borde-claro);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--fondo-claro);
+    color: var(--texto-claro);
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+textarea:focus {
+    border-color: var(--color-boton-claro);
+    outline: none;
+}
+
+body.modo-oscuro textarea {
+    background-color: var(--fondo-oscuro);
+    border-color: var(--borde-oscuro);
+    color: var(--texto-oscuro);
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--color-boton-claro);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-boton-oscuro);
+}
+
+body.modo-oscuro button {
+    background-color: var(--color-boton-oscuro);
+    color: var(--texto-oscuro);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--fondo-footer-claro);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: var(--texto-claro);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer.modo-oscuro {
+    background-color: var(--fondo-footer-oscuro);
+}
+
+footer p {
+    margin: 0 1rem 0 0;
+}
+
+footer a {
+    margin-left: 1rem;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para tablet */
+@media (max-width: 1174px) and (min-width: 768px) {
+    textarea {
+        height: 90px;
+    }
+
+    .botones {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 933px) and (min-width: 375px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
