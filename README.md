@@ -6,10 +6,15 @@ Se desarrolló un sitio web utilizando HTML, CSS y JavaScript, con la finalidad 
 La condicion era reemplazar las vocales por cada texto, tanto para encriptar, como para el paso inverso de desencriptacion
 
 La letra "a" es convertida a "ai".
+
 La letra "e" es convertida a "enter".
+
 La letra "i" es convertida a "imes".
+
 La letra "o" es convertida a "ober".
+
 La letra "u" es convertida a "ufat".
+
 
 Los equisitos para el desafío del encriptador eran los siguientes:
 
