@@ -1,4 +1,5 @@
-# encriptadorcursoalura
+
+# encriptadorcursoalura  Challenge Encriptador Alura
 Encriptador de Texto para Challenge Alura ONE G7
 
 Se desarrolló un sitio web utilizando HTML, CSS y JavaScript, con la finalidad de encriptar un texto en el que se reemplazaban las vocales por unas cadenas de texto que fueron asignadas. 
