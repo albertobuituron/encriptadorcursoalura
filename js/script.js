@@ -22,8 +22,7 @@ function encriptarTexto(texto) {
 
 // Función para desencriptar el texto
 function desencriptarTexto(texto) {
-    // Usar expresiones regulares con global y case-insensitive flag para evitar errores
-    return texto
+     return texto
         .replace(/ufat/g, 'u')
         .replace(/ober/g, 'o')
         .replace(/imes/g, 'i')

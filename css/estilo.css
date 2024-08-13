@@ -138,6 +138,7 @@ footer {
 
 footer.modo-oscuro {
     background-color: var(--fondo-footer-oscuro);
+    
 }
 
 footer p {
